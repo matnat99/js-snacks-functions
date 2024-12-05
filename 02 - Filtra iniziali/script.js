@@ -6,7 +6,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 const letter = "A"
 
-function filterInitialLetter(names,letter){
+const filterInitialLetter = function(names,letter){
     let initialNameA = []
 
     for(i = 0; i < names.length; i++){
