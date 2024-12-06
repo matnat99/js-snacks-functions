@@ -9,13 +9,16 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-function greetUserBasedOnTime(name) {
-    const hour = new Date().getHours()
+const greetUserBasedOnTime = (name) =>{
+    const now = new Date()
+    const currentHour = now.getHours()
     let greeting
 
-    if (hour < 13) {
+    if(currentHour <= 4){
+        greeting = "Buonanotte"
+    } else if (currentHour <= 13) {
         greeting = "Buongiorno"
-    } else if (hour < 17) {
+    } else if (currentHour <= 17) {
         greeting = "Buon pomeriggio"
     } else {
         greeting = "Buonasera"

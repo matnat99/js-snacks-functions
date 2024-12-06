@@ -4,7 +4,7 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-const greetUser=(userName) => `Ciao ${userName}`
+const greetUser=(name) => `Ciao ${userName}`
     
 
 // Invoca la funzione qui e stampa il risultato in console

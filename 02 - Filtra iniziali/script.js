@@ -4,9 +4,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-const letter = "A"
-
-const filterInitialLetter = function(names,letter){
+const filterInitialLetter = (names,letter) =>{
     let initialNameA = []
 
     for(i = 0; i < names.length; i++){
@@ -20,7 +18,7 @@ const filterInitialLetter = function(names,letter){
 
 
 // Invoca la funzione qui e stampa il risultato in console
-const initialNameA = filterInitialLetter(names,letter)
+const initialNameA = filterInitialLetter(names,"A")
 console.log(initialNameA)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

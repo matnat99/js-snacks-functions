@@ -4,14 +4,14 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-const countVowels = function(word){
-    let vowels = "aeiou"
+const countVowels = (words) =>{
+    const vowels = ["a", "e", "i", "o", "u"]
     let count = 0 
 
     for(i = 0; i < word.length; i++){
-        let character = word[i]
+        const character = word[i]
         if (vowels.includes(character)) { 
-            count += 1
+            count++
         }
     }
     return count
